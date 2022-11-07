@@ -4,9 +4,14 @@ const deck = ['RD1','RD2','RD3','RD4','RD5','RD6','RD7','RD8','RD9','RDA','RDJ',
 'BS1','BS2','BS3','BS4','BS5','BS6','BS7','BS8','BS9','BSA','BSJ','BSK','BSQ',
 'BC1','BC2','BC3','BC4','BC5','BC6','BC7','BC8','BC9','BCA','BCJ','BCK','BCQ'];
 
-console.log(...deck);
-for(let j=deck.length-1;j>0;j--)           {
+for(let j=deck.length-1;j>0;j--){
 let val = Math.floor(Math.random()*(j+1));
 [deck[j],deck[val]] = [deck[val],deck[j]];
 }
-console.log(...deck);
+for (let i=0,k=0;i<4;i++){
+    document.getElementsByTagName('body')[0].innerHTML+="<div class='decks'></div>";
+    for (let j=0;j<13;j++,k++){
+        document.getElementsByClassName('decks')[i].innerHTML+='<img>';
+        document.getElementsByTagName('img')[k].src="images/cards/"+deck[k]+".png";
+    }
+}
