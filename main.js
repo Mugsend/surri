@@ -12,6 +12,6 @@ for (let i=0,k=0;i<4;i++){
     document.getElementsByTagName('body')[0].innerHTML+="<div class='decks'></div>";
     for (let j=0;j<13;j++,k++){
         document.getElementsByClassName('decks')[i].innerHTML+='<img>';
-        document.getElementsByTagName('img')[k].src="images/cards/"+deck[k]+".png";
+        document.getElementsByTagName('img')[k].src="PNG-cards-1.3/"+deck[k]+".png";
     }
 }
