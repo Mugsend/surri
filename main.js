@@ -1,8 +1,8 @@
 
-const deck = ['RD1','RD2','RD3','RD4','RD5','RD6','RD7','RD8','RD9','RDA','RDJ','RDK','RDQ',
-'RH1','RH2','RH3','RH4','RH5','RH6','RH7','RH8','RH9','RHA','RHJ','RHK','RHQ',
-'BS1','BS2','BS3','BS4','BS5','BS6','BS7','BS8','BS9','BSA','BSJ','BSK','BSQ',
-'BC1','BC2','BC3','BC4','BC5','BC6','BC7','BC8','BC9','BCA','BCJ','BCK','BCQ'];
+const deck = ['RDA','RD2','RD3','RD4','RD5','RD6','RD7','RD8','RD9','RD10','RDJ','RDK','RDQ',
+'RHA','RH2','RH3','RH4','RH5','RH6','RH7','RH8','RH9','RH10','RHJ','RHK','RHQ',
+'BSA','BS2','BS3','BS4','BS5','BS6','BS7','BS8','BS9','BS10','BSJ','BSK','BSQ',
+'BCA','BC2','BC3','BC4','BC5','BC6','BC7','BC8','BC9','BC10','BCJ','BCK','BCQ'];
 
 for(let j=deck.length-1;j>0;j--){
 let val = Math.floor(Math.random()*(j+1));
